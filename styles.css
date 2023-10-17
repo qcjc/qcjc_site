@@ -7,6 +7,46 @@ body {
   text-align: center;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #161b22; /* Darker background for the button-like appearance */
+    padding: 10px 20px; /* Adjust padding to style the button */
+    border: 1px solid #2d333b; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+    user-select: none; /* Prevent text selection on click */
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #161b22; /* Darker background */
+    min-width: 160px;
+    z-index: 1;
+    border: 1px solid #2d333b; /* Add a border */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow */
+    border-radius: 5px; /* Round the corners */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #c9d1d9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: #0e1116; /* Dark background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
 .container {
   max-width: 900px; /* Limit content width */
   margin: 0 auto; /* Center the content horizontally */
