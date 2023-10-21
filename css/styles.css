@@ -10,7 +10,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    background-color: #161b22; /* Darker background for the button-like appearance */
+    background-color: #161b22;  /*Darker background for the button-like appearance */
     padding: 10px 20px; /* Adjust padding to style the button */
     border: 1px solid #2d333b; /* Add a border */
     border-radius: 5px; /* Round the corners */
@@ -54,12 +54,29 @@ body {
 }
 
 .header {
-  background-color: #161b22; /* Dark header background */
+  background-color: #161b22;  /*Dark header background */
   padding: 20px;
 }
 
 .header h1 {
-  color: #c9d1d9; /* Light text color for headings */
+  color: #c9d1d9;  /*Light text color for headings */
+}
+
+.homepage_title{
+  color:#6c0101;
+  background-color: #080808;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px 5px #e2bd14;
+  text-decoration: none;
+  font-size: 400%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  border: 10px solid #080808;
+}
+
+.homepage_bar{
+  background-color: #080808;
 }
 
 .section {
@@ -86,3 +103,44 @@ body {
 .button:hover {
   background-color: #3572b0; /* Hover color */
 }
+
+img.logo {
+  border-radius: 50%;
+  float: center;
+  padding: auto;
+}
+
+div.side_column{
+  float: left;
+  width: 20%;
+  background-color: #080808;
+}
+
+a:link {
+  color: #e2bd14;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #e2bd14;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #e2bd14;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
