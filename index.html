@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quantum Computing Journal Club</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css"> <!--connect styles.cpp-->
+        <!--some fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <header>
-            <h1 class="homepage_title">
-                Quantum Computing Journal Club
-            </h1>
+    <body> 
+        <section class="header">
             <nav>
-                <ul class="homepage_bar">
-                    <li class="dropdown">
-                        <a href="#">PROJECTS</a>
-                        <ul class="dropdown-content">
-                            <li>PROVA1</li>
-                            <li>PROVA2</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="./schedule.html">SCHEDULE</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="./gallery.html">GALLERY</a>
-                    </li> 
-                    <li class="dropdown">
-                        <a href="./contact.html">CONTACTS</a>
-                    </li>                    
-                </ul>
+                <a href="index.html"><img class="logo" src="images/logo_red_yellow.jpg" ></a>
+                <div class="nav-links">
+                    <ul>
+                        <li class="dropdown"><a href="">PROJECTS</a>
+                            <ul class="dropdown-content">
+                                <li>PROVA1</li>
+                                <li>PROVA2</li>
+                            </ul>
+                        </li>
+                        <li><a href="./schedule.html">SCHEDULE</a></li>
+                        <li><a href="./contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
             </nav>
-        </header>
 
-        <div class="row">
-            <div class="side_column">
-                <img 
-                        class="logo"
-                        src="images/logo_red_yellow.jpg" 
-                        width="50%"
-                        margin-right: 10px;
-                        margin-left: 10px;
-                    />
-                <p> Follow us!</p>
+            <div class="homepage_title">
+                <h1>QUANTUM COMPUTING JOURNAL CLUB</h1>
+                <p><i>“One must still have chaos in oneself to be able to give birth to a dancing star”</i><br> Nietzsche</p>
+                <a class="hero-btn" href="">Visit us to know more</a>
+            </div>
+        </section>
+
+        <section class="follow">
+            <p> Follow us!</p>
                 <a href="https://www.instagram.com/qcjournalclub/" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
                     width="50">
@@ -50,20 +45,23 @@
                     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                     width="50">
                 </a>
-            </div>
-            <div class="column">
-                <main>
-                    <section id="about">
-                        <h2>About Us</h2>
+        </section>
+        
+
+        
+                
+
+                    <section class="about">
+                        <h1>About Us</h1>
                         <p>Born in 2023 in the physics department of Turin University, Quantum Computing Journal Club is a space for knowledge sharing on topics related to the quantum world.</p>
                         <p>Enjoy :)</p>
                     </section>
-                </main>
+
                 <footer>
                     <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>
                 </footer>
-            </div>
-        </div> 
+
+        
     </body>
 </html>
 
