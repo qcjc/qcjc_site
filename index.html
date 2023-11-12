@@ -4,19 +4,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quantum Computing Journal Club</title>
         <link rel="stylesheet" href="css/styles.css"> <!--connect styles.cpp-->
+        <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.cpp-->
         <!--some fonts from google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+        <!--icons for mobile view-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body> 
-        <section class="header">
+        <div class="header">
             <nav>
                 <a href="index.html"><img class="logo" src="images/logo_red_yellow.jpg" ></a>
-                <div class="nav-links">
-                    <i class="fa fa-times-circle"></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                     <ul>
                         <li class="dropdown"><a href="">PROJECTS</a>
                             <ul class="dropdown-content">
@@ -28,42 +31,50 @@
                         <li><a href="./contact.html">CONTACTS</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars"></i>
+                <div class="toggle-icon" id="navLinks">
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
             </nav>
-
             <div class="homepage_title">
                 <h1>QUANTUM COMPUTING JOURNAL CLUB</h1>
                 <p><i>“One must still have chaos in oneself to be able to give birth to a dancing star”</i><br> Nietzsche</p>
+            </div>
+            <div>
                 <a class="hero-btn" href="">Visit us to know more</a>
             </div>
-        </section>
-
-        <section class="follow">
+        </div>
+        <div class="follow">
             <p> Follow us!</p>
-                <a href="https://www.instagram.com/qcjournalclub/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
-                    width="50">
-                </a>
-                <a href="https://github.com/qcjc" target="_blank">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                    width="50">
-                </a>
-        </section>
-        
+            <a href="https://www.instagram.com/qcjournalclub/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                width="50">
+            </a>
+            <a href="https://github.com/qcjc" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                width="50">
+            </a>
+        </div>
+    
+        <div class="about">
+            <h1>About Us</h1>
+            <p>Born in 2023 in the physics department of Turin University, Quantum Computing Journal Club is a space for knowledge sharing on topics related to the quantum world.</p>
+            <p>Enjoy :)</p>
+        </div>
 
-        
-                
+        <footer>
+            <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>
+        </footer>
 
-                    <section class="about">
-                        <h1>About Us</h1>
-                        <p>Born in 2023 in the physics department of Turin University, Quantum Computing Journal Club is a space for knowledge sharing on topics related to the quantum world.</p>
-                        <p>Enjoy :)</p>
-                    </section>
-
-                <footer>
-                    <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>
-                </footer>
-
+        <!--Java script for Toggle menu in mobile view-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0px"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
         
     </body>
 </html>

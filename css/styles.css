@@ -1,45 +1,34 @@
-
-@media(max-width: 700px){
-  .nav-links ul li{
-    display: block;
-  }
-  .nav-links{
-    position: absolute;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-  }
-}
-
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
 }
 
-
+/* BODY */
 body{
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../images/fractal_blue_background.png);
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../images/fractal_black_background.png);
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
 }
 
-
+/* HEADER */
 .header {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   position: relative;
 }
 
+/* LOGO */
 img.logo {
+  position: relative;
   border-radius: 50%;
   float: center;
   padding: auto;
 }
 
+/* NAV */
 nav{
   display: flex;
   padding: 2% 6%;
@@ -61,9 +50,6 @@ nav img{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
-  /*box-shadow: 2px 2px 5px #e2bd14; /* Add a shadow */
-  /*border-radius: 5px; /* Round the corners */
-  /*cursor: pointer;*/
 }
 
 .nav-links ul li a{
@@ -91,26 +77,23 @@ nav .fa{
   display: none;
 }
 
+/* HOMEPAGE TITLE */
 .homepage_title{
   width: 90%;
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateX(-50%);
   text-align: center;
 }
 
 .homepage_title h1{
   color:#e2bd14;
-  /*background-color: #080808;*/
-  /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
   text-shadow: 2px 2px 5px #6c0101;
   text-decoration: none;
   font-size: 400%;
   margin-top: 10px;
   margin-bottom: 10px;
   vertical-align: middle;
-  /*border: 10px solid #080808;*/
 }
 
 .homepage_title p{
@@ -119,6 +102,8 @@ nav .fa{
   margin-bottom: 10px;
 }
 
+
+/* DROPDOWN */
 .dropdown {
   position: relative;
   display: inline-block; 
@@ -154,6 +139,7 @@ nav .fa{
   color: #ffffff; /* Change text color on hover */
 }
 
+/* BUTTON */
 .hero-btn{
   display: inline-block;
   text-decoration: none;
@@ -161,13 +147,16 @@ nav .fa{
   padding: 12px 34px;
   font-size: 20px;
   border: 1px solid #e2bd14;
-  background: transparent;
   position: relative;
+  background: transparent;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   transition: 0.5s;
   font-weight: 500;
   box-shadow: 0px 0px 10px 2px #e2bd14; /* Add a shadow: left, down, intensity, dimension  */
   border-radius: 5px; /* Round the corners */
+  margin-top: 20px;
 }
 
 .hero-btn a{
@@ -180,23 +169,41 @@ nav .fa{
   transition: 0.5s;
 }
 
+/* ABOUT */
 .about{
   text-align: center;
-  /*position: absolute;*/
-  bottom: 20px;
+  width: 90%;
+  position: relative;
   left: 50%;
+  transform: translateX(-50%);
   color: #fff;
+  margin-top: 20px;
 }
 
 .about h1{
   color: #e2bd14;
 }
 
+/* FOLLOW */
 .follow{
-  position: absolute;
-  top: 70%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateX(-50%);
   text-align: center;
   color: #fff;
+  margin-top: 20px;
+}
+
+
+/* FOOTER */
+footer{
+  position: relative;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  margin-top: 20px;
+  /*margin-bottom: 20px;*/
+
 }
