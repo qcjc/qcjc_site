@@ -1,0 +1,174 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  /* BODY */
+  body{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../images/fractal_black_background.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  /* HEADER */
+  .header {
+    /*min-height: 75vh;*/
+    width: 100%;
+    position: relative;
+  }
+  
+  /* LOGO */
+  img.logo {
+    position: relative;
+    border-radius: 50%;
+    float: center;
+    padding: auto;
+  }
+  
+  /* NAV */
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img{
+    width: 150px;
+    position: relative;
+  }
+  
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    color: #e2bd14;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #e2bd14;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  nav .fa{
+    display: none;
+  }
+  
+  
+  /* DROPDOWN */
+  .dropdown {
+    position: relative;
+    display: inline-block; 
+    background-color: transparent;  
+    padding: 10px 20px;  /*Adjust padding to style the button */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-image:  linear-gradient(rgba(6,13,45,0.7),rgba(6,13,45,0.7)), url(../images/fractal_black_background.png);
+    width: auto;
+    z-index: 1;
+    margin-top: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #c9d1d9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #0e1116; /* Dark background on hover */
+    color: #ffffff; /* Change text color on hover */
+  }
+  
+  
+  /* ABOUT */
+  .about{
+    text-align: center;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .about h1{
+    color: #e2bd14;
+  }
+  
+  /* FOLLOW */
+  .follow{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  
+  /* FOOTER */
+  footer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+    bottom: 20px;  
+  }
+  
+  
+  /*LANGUAGE CHOICE*/
+  .language{
+    margin-left: 20px;
+    color: #e2bd14;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  body h1{
+    color: #e2bd14;
+    margin-bottom: 20px;
+  }
+  
+  .contact{
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+  }
