@@ -6,7 +6,8 @@
         <meta name="google-site-verification" content="8NtkcWuMaFwMZ5ayRQaYZFRBCISKWVPFbmmrNswApso" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>QCJC</title>
-        <link rel="stylesheet" href="css/index_styles.css"> <!--connect styles.css-->
+        <link rel="stylesheet" href="css/styles.css"> <!--connect styles.css-->
+        <link rel="stylesheet" href="css/navbar.css"> <!--connect styles.css-->
         <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.css-->
         <!--some fonts from google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +19,14 @@
     </head>
 
     <body> 
-        <div class="header">
+        <header>
             <nav>
                 <a href="index.html"><img class="logo" src="images/logo_red_yellow.jpg" ></a>
                 <!--<a href="english_index.html" class="language">  EN</a> -->
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                     <ul>
-                        <li class="dropdown"><a href="">PROGETTI</a>
+                        <li class="dropdown"><a href="projects.html">PROGETTI</a>
                             <ul class="dropdown-content">
                                 <li>Quantum Autoencoder</li>
                                 <li>Quantum Graphs</li>
@@ -39,6 +40,8 @@
                     <i class="fa fa-bars" onclick="showMenu()"></i>
                 </div>
             </nav>
+        </header>
+        <main>
             <div class="homepage_title">
                 <h1>QUANTUM COMPUTING JOURNAL CLUB</h1>
                 <p><i>“Bisogna avere un caos dentro di sé per partorire una stella danzante”</i><br> F. Nietzsche</p>
@@ -46,28 +49,28 @@
             <div>
                 <a class="hero-btn" href="">Scopri di più</a>
             </div>
-        </div>
-        <div class="follow">
-            <p> Seguici!</p>
-            <a href="https://www.instagram.com/qcjournalclub/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
-                width="50">
-            </a>
-            <a href="https://github.com/qcjc" target="_blank">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                width="50">
-            </a>
-        </div>
+            <div class="follow">
+                <p> Seguici!</p>
+                <a href="https://www.instagram.com/qcjournalclub/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                    width="50">
+                </a>
+                <a href="https://github.com/qcjc" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                    width="50">
+                </a>
+            </div>
+            <div class="about">
+                <h1>Il Club</h1>
+                <p>Formatosi nel 2023 presso il Dipartimento di Fisica dell'Università di Torino, il Quantum Computing Journal Club è uno spazio per trattare assieme aspetti del mondo Quantum.</p>
+                <p>Enjoy :)</p>
+            </div>
+        </main>
+        
     
-        <div class="about">
-            <h1>Il Club</h1>
-            <p>Formatosi nel 2023 presso il Dipartimento di Fisica dell'Università di Torino, il Quantum Computing Journal Club è uno spazio per trattare assieme aspetti del mondo Quantum.</p>
-            <p>Enjoy :)</p>
-        </div>
+        
 
-        <footer>
-            <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>
-        </footer>
+        
 
         <!--Java script for Toggle menu in mobile view-->
         <script>
@@ -79,7 +82,10 @@
                 navLinks.style.right = "-200px"
             }
         </script>
-        
+        <script src="script.js"></script>
     </body>
+    <footer>
+        <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>
+    </footer>
 </html>
 
