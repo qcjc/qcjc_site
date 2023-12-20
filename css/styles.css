@@ -29,7 +29,6 @@ body h1{
 }
 
 main{
-  /*position: relative;*/
   text-align: center;
   vertical-align: top;
   min-height: 90vh;
@@ -110,7 +109,11 @@ main{
   transform: translateX(-50%);
   text-align: center;
   color: #fff;
-  margin-top: 20px;
+  padding: 30px;
+}
+
+.follow img{
+  padding: 5px;
 }
 
 
