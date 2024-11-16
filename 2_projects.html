@@ -1,12 +1,12 @@
 <html lang="en">
-    <link rel="stylesheet" href="../css/styles.css"> <!--connect styles.css-->
-    <link rel="stylesheet" href="../css/navbar.css"> <!--connect styles.css-->
-    <link rel="stylesheet" href="../css/mobile.css"> <!--connect mobile.css-->
+    <link rel="stylesheet" href="css/styles.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/navbar.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.css-->
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="shortcut icon" href="../images/logo_red_yellow.jpg" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/logo_red_yellow.jpg" type="image/x-icon" />
         <title>QCJC Progetti</title>
         <!--some fonts from google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,53 +15,21 @@
         <!--icons for mobile view-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <a href="../index.html"><img class="logo" src="../images/logo_red_yellow.jpg" ></a>
-                <!--<a href="english_index.html" class="language">  EN</a> -->
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
-                    <ul>
-                        <li class="dropdown"><a href="../activities/activities.html">ATTIVITA'</a>
-                            <ul class="dropdown-content">
-                                <li>Seminari</li>
-                                <li>Laboratorio Qiskit</li>
-                                <li>Aula studio</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../projects/projects.html">PROGETTI</a>
-                            <ul class="dropdown-content">
-                                <li>Quantum Autoencoder</li>
-                                <li>Quantum Graphs</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../material/material.html">MATERIALE</a>
-                            <ul class="dropdown-content">
-                                <li>Papers</li>
-                                <li>Corsi esterni</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../opportunities/opportunities.html">OPPORTUNITIES</a>
-                            <ul class="dropdown-content">
-                                <li>PhD</li>
-                                <li>Postdoc</li>
-                                <li>Internships</li>
-                                <li>Jobs</li>
-                            </ul>
-                        </li>
-                        <li><a href="../schedule.html">CALENDARIO</a></li>
-                        <li><a href="../contact.html">CONTATTI</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="toggle-icon" id="navLinks">
-                    <i class="fa fa-bars" onclick="showMenu()"></i>
-                </div>
-            </nav>
-        </header>
+        <div id="header-placeholder"></div>
         <!--Java script for Toggle menu in mobile view-->
         <script>
             var navLinks = document.getElementById("navLinks")
