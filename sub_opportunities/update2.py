@@ -31,7 +31,6 @@ def write_html_file(collection_name, bookmarks):
     if collection_name=='Articles':
         filename = f"./articles/{collection_name}.html"
     with open(filename, "w", encoding="utf-8") as f:
-        f.write("<!DOCTYPE html>\n")
         f.write("<html lang='en'>\n")
         with open('./template.html','r') as file:
             for line in file:
@@ -43,11 +42,11 @@ def write_html_file(collection_name, bookmarks):
         for bookmark in bookmarks:
             f.write(f"        <li><a href='{bookmark['link']}' target='_blank'>{bookmark['title']}</a></li>\n")
         f.write("    </ul>\n")
-        f.write("\n</main>\n")
-        f.write("   <footer>")
-        f.write("        <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>")
-        f.write("   </footer>")
-        f.write("</body>\n</html>")
+        f.write("\n     </main>\n")
+        f.write("       <footer>\n")
+        f.write("            <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>\n")
+        f.write("       </footer>\n")
+        f.write("</body>\n")
     print(f"File creato: {filename}")
 
 # Funzione principale
