@@ -15,54 +15,23 @@
         <!--icons for mobile view-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <a href="../index.html"><img class="logo" src="../images/logo_red_yellow.jpg" ></a>
-                <!--<a href="english_index.html" class="language">  EN</a> -->
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
-                    <ul>
-                        <li class="dropdown"><a href="../activities/activities.html">ATTIVITA'</a>
-                            <ul class="dropdown-content">
-                                <li>Seminari</li>
-                                <li>Laboratorio Qiskit</li>
-                                <li>Aula studio</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../projects/projects.html">PROGETTI</a>
-                            <ul class="dropdown-content">
-                                <li>Quantum Autoencoder</li>
-                                <li>Quantum Graphs</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../material/material.html">MATERIALE</a>
-                            <ul class="dropdown-content">
-                                <li>Papers</li>
-                                <li>Corsi esterni</li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="../opportunities/opportunities.html">OPPORTUNITIES</a>
-                            <ul class="dropdown-content">
-                                <li><a href="./Ph_D.html" target="_blank"> Phd</a></li>
-                                <li><a href="./Post_Docs.html" target="_blank"> Postdoc</a></li>
-                                <li><a href="./Internships.html" target="_blank"> Internships</a></li>
-                                <li><a href="./Jobs.html" target="_blank"> Jobs</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../schedule.html">CALENDARIO</a></li>
-                        <li><a href="../contact.html">CONTATTI</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="toggle-icon" id="navLinks">
-                    <i class="fa fa-bars" onclick="showMenu()"></i>
-                </div>
-            </nav>
-        </header>
+        
         <!--Java script for Toggle menu in mobile view-->
+        <div id="header-placeholder"></div>
         <script>
             var navLinks = document.getElementById("navLinks")
             function showMenu(){

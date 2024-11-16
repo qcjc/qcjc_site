@@ -15,13 +15,25 @@
         <!--icons for mobile view-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
     </head>
 
     <body>
-        <header>
+        <div id="header-placeholder"></div>
+        <!--<header>
             <nav>
                 <a href="../index.html"><img class="logo" src="../images/logo_red_yellow.jpg" ></a>
-                <!--<a href="english_index.html" class="language">  EN</a> -->
+                <a href="english_index.html" class="language">  EN</a> da commentareeee
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                     <ul>
@@ -61,6 +73,7 @@
                 </div>
             </nav>
         </header>
+    -->
         <!--Java script for Toggle menu in mobile view-->
         <script>
             var navLinks = document.getElementById("navLinks")
