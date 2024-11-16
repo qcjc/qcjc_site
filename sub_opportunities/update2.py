@@ -32,7 +32,7 @@ def write_html_file(collection_name, bookmarks):
         filename = f"./articles/{collection_name}.html"
     with open(filename, "w", encoding="utf-8") as f:
         f.write("<html lang='en'>\n")
-        with open('./template.html','r') as file:
+        with open('./sub_opportunities/template.html','r') as file:
             for line in file:
             # Print each line
                 f.write(line)
