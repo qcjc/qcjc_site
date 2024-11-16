@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>PhD</title>
-</head>
-<body>
-    <h1>Collezione: PhD</h1>
+    <link rel="stylesheet" href="css/styles.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/navbar.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.css-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="shortcut icon" href="images/logo_red_yellow.jpg" type="image/x-icon" />
+        <title>QCJC Chi siamo</title>
+        <!--some fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+        <!--icons for mobile view-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <!--Java script for Toggle menu in mobile view-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0px"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    
+<main>
+    <h1>PhD offers</h1>
     <ul>
-        <li><a href='https://www.linkedin.com/posts/imprs-physics-of-light_degree-msc-stipends-activity-7263143993876660224-0cIC?utm_source=share&utm_medium=member_android'>IMPRS Physics of Light on LinkedIn: #degree #msc #stipends #phd #positions #nano_opics #quantum_optics #ai…</a></li>
-        <li><a href='https://www.linkedin.com/posts/clara-wanjura-679683282_i-am-happy-to-announce-that-i-will-be-leading-activity-7254826013375832065-qb4-?utm_source=share&utm_medium=member_android'>Clara Wanjura on LinkedIn: I am happy to announce that I will be leading a Minerva Fast Track Group…</a></li>
-        <li><a href='https://www.linkedin.com/posts/european-center-for-quantum-sciences_cesq-activity-7259128785889804288-jKUl?utm_source=share&utm_medium=member_android'>European Center for Quantum Sciences on LinkedIn: #cesq</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7250022587689291777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7250022587689291777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Quantum Group Universität Wien on LinkedIn: #hiring #university #research #quanta #openpositions #applynow #joboffer…</a></li>
+        <li><a href='https://www.linkedin.com/posts/imprs-physics-of-light_degree-msc-stipends-activity-7263143993876660224-0cIC?utm_source=share&utm_medium=member_android' target='_blank'>IMPRS Physics of Light on LinkedIn: #degree #msc #stipends #phd #positions #nano_opics #quantum_optics #ai…</a></li>
+        <li><a href='https://www.linkedin.com/posts/clara-wanjura-679683282_i-am-happy-to-announce-that-i-will-be-leading-activity-7254826013375832065-qb4-?utm_source=share&utm_medium=member_android' target='_blank'>Clara Wanjura on LinkedIn: I am happy to announce that I will be leading a Minerva Fast Track Group…</a></li>
+        <li><a href='https://www.linkedin.com/posts/european-center-for-quantum-sciences_cesq-activity-7259128785889804288-jKUl?utm_source=share&utm_medium=member_android' target='_blank'>European Center for Quantum Sciences on LinkedIn: #cesq</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7250022587689291777?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7250022587689291777%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Quantum Group Universität Wien on LinkedIn: #hiring #university #research #quanta #openpositions #applynow #joboffer…</a></li>
     </ul>
-</body>
+
+</main>
+   <footer>        <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>   </footer></body>
 </html>

@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>PostDocs</title>
-</head>
-<body>
-    <h1>Collezione: PostDocs</h1>
+    <link rel="stylesheet" href="css/styles.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/navbar.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.css-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="shortcut icon" href="images/logo_red_yellow.jpg" type="image/x-icon" />
+        <title>QCJC Chi siamo</title>
+        <!--some fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+        <!--icons for mobile view-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <!--Java script for Toggle menu in mobile view-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0px"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    
+<main>
+    <h1>PostDocs offers</h1>
     <ul>
-        <li><a href='https://www.linkedin.com/posts/weizmann-institute-of-science_transform-your-research-career-with-max-planck-weizmann-activity-7248997550572105728-HZaW?utm_source=share&utm_medium=member_android'>Weizmann Institute of Science on LinkedIn: Transform Your Research Career with Max Planck-Weizmann</a></li>
-        <li><a href='https://www.linkedin.com/posts/vaitiekenas_we-are-seeking-a-postdoctoral-fellow-to-work-activity-7260605107505942528-2nqX?utm_source=share&utm_medium=member_android'>Saulius Vaitiekenas on LinkedIn: We are seeking a Postdoctoral Fellow to work on Synthetic Topological…</a></li>
-        <li><a href='https://www.linkedin.com/posts/pawel-caputa-657326164_postdoctoral-fellow-in-theoretical-physics-activity-7257751937444417536-jfma?utm_source=share&utm_medium=member_android'>Pawel Caputa on LinkedIn: Postdoctoral Fellow in Theoretical Physics (2)</a></li>
-        <li><a href='https://www.linkedin.com/posts/john-preskill-154abab3_postdoctoral-scholars-activity-7258126752382672896-jVm5?utm_source=share&utm_medium=member_android'>John Preskill on LinkedIn: Postdoctoral Scholars</a></li>
-        <li><a href='https://www.linkedin.com/posts/alanaspuru_postdoctoral-positions-activity-7252767400138309633-wY60?utm_source=share&utm_medium=member_android'>Alán Aspuru-Guzik on LinkedIn: Postdoctoral Positions: | 16 comments</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7247153200301043713?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7247153200301043713%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Janik Wolters on LinkedIn: Postdoc Position in Berlin</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249073885072023552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249073885072023552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Fabio Anza, PhD on LinkedIn: #complexquantumsystems #quantum #complexity #physicsofinformation #postdoc…</a></li>
+        <li><a href='https://www.linkedin.com/posts/weizmann-institute-of-science_transform-your-research-career-with-max-planck-weizmann-activity-7248997550572105728-HZaW?utm_source=share&utm_medium=member_android' target='_blank'>Weizmann Institute of Science on LinkedIn: Transform Your Research Career with Max Planck-Weizmann</a></li>
+        <li><a href='https://www.linkedin.com/posts/vaitiekenas_we-are-seeking-a-postdoctoral-fellow-to-work-activity-7260605107505942528-2nqX?utm_source=share&utm_medium=member_android' target='_blank'>Saulius Vaitiekenas on LinkedIn: We are seeking a Postdoctoral Fellow to work on Synthetic Topological…</a></li>
+        <li><a href='https://www.linkedin.com/posts/pawel-caputa-657326164_postdoctoral-fellow-in-theoretical-physics-activity-7257751937444417536-jfma?utm_source=share&utm_medium=member_android' target='_blank'>Pawel Caputa on LinkedIn: Postdoctoral Fellow in Theoretical Physics (2)</a></li>
+        <li><a href='https://www.linkedin.com/posts/john-preskill-154abab3_postdoctoral-scholars-activity-7258126752382672896-jVm5?utm_source=share&utm_medium=member_android' target='_blank'>John Preskill on LinkedIn: Postdoctoral Scholars</a></li>
+        <li><a href='https://www.linkedin.com/posts/alanaspuru_postdoctoral-positions-activity-7252767400138309633-wY60?utm_source=share&utm_medium=member_android' target='_blank'>Alán Aspuru-Guzik on LinkedIn: Postdoctoral Positions: | 16 comments</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7247153200301043713?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7247153200301043713%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Janik Wolters on LinkedIn: Postdoc Position in Berlin</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249073885072023552?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249073885072023552%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Fabio Anza, PhD on LinkedIn: #complexquantumsystems #quantum #complexity #physicsofinformation #postdoc…</a></li>
     </ul>
-</body>
+
+</main>
+   <footer>        <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>   </footer></body>
 </html>

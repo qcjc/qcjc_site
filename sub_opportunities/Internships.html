@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Internships</title>
-</head>
-<body>
-    <h1>Collezione: Internships</h1>
+    <link rel="stylesheet" href="css/styles.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/navbar.css"> <!--connect styles.css-->
+    <link rel="stylesheet" href="css/mobile.css"> <!--connect mobile.css-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="shortcut icon" href="images/logo_red_yellow.jpg" type="image/x-icon" />
+        <title>QCJC Chi siamo</title>
+        <!--some fonts from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+        <!--icons for mobile view-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            // JavaScript per caricare il file header.html
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header-placeholder").innerHTML = data;
+                    })
+                    .catch(error => console.error("Errore nel caricamento dell'header:", error));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <!--Java script for Toggle menu in mobile view-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0px"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    
+<main>
+    <h1>Internships offers</h1>
     <ul>
-        <li><a href='https://www.linkedin.com/posts/maria-gragera-garces_student-research-fellowships-2024-catalonia-activity-7261358187285549056-B-p6?utm_source=share&utm_medium=member_android'>María Gragera Garcés on LinkedIn: Student Research Fellowships 2024 - Catalonia Quantum Academy</a></li>
-        <li><a href='https://www.linkedin.com/posts/tom-dvir-b0751714_internship-opportunity-with-quantum-machines-activity-7259157485876310016-caRZ?utm_source=share&utm_medium=member_android'>Tom Dvir on LinkedIn: Internship Opportunity with Quantum Machines Quantum Machines is a global…</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249003276136787968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249003276136787968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Quantum Computing Jobs on LinkedIn: IBM Internships - 2025 start | Quantum Computing Jobs</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249109040960598016?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249109040960598016%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Sanjay Vishwakarma on LinkedIn: Job Details</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7251676806053785600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7251676806053785600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>Nicholas Harrigan on LinkedIn: Looking for a quantum computing internship? This is your opportunity to be…</a></li>
-        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7255595604125388801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7255595604125388801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29'>David Schlegel on LinkedIn: #hiring</a></li>
-        <li><a href='https://www.linkedin.com/posts/schandrakeshroshan_eth-student-summer-research-fellowship-activity-7258728565884526592-anr6?utm_source=share&utm_medium=member_android'>Dr. S Chand Rakesh Roshan, Ph.D. on LinkedIn: ETH Student Summer Research Fellowship</a></li>
-        <li><a href='https://www.linkedin.com/posts/lewis-anderson_job-details-activity-7257330213867372545-yYuy?utm_source=share&utm_medium=member_android'>Lewis Anderson on LinkedIn: Job Details</a></li>
+        <li><a href='https://www.linkedin.com/posts/maria-gragera-garces_student-research-fellowships-2024-catalonia-activity-7261358187285549056-B-p6?utm_source=share&utm_medium=member_android' target='_blank'>María Gragera Garcés on LinkedIn: Student Research Fellowships 2024 - Catalonia Quantum Academy</a></li>
+        <li><a href='https://www.linkedin.com/posts/tom-dvir-b0751714_internship-opportunity-with-quantum-machines-activity-7259157485876310016-caRZ?utm_source=share&utm_medium=member_android' target='_blank'>Tom Dvir on LinkedIn: Internship Opportunity with Quantum Machines Quantum Machines is a global…</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249003276136787968?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249003276136787968%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Quantum Computing Jobs on LinkedIn: IBM Internships - 2025 start | Quantum Computing Jobs</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7249109040960598016?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7249109040960598016%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Sanjay Vishwakarma on LinkedIn: Job Details</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7251676806053785600?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7251676806053785600%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>Nicholas Harrigan on LinkedIn: Looking for a quantum computing internship? This is your opportunity to be…</a></li>
+        <li><a href='https://www.linkedin.com/feed/update/urn:li:activity:7255595604125388801?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7255595604125388801%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29' target='_blank'>David Schlegel on LinkedIn: #hiring</a></li>
+        <li><a href='https://www.linkedin.com/posts/schandrakeshroshan_eth-student-summer-research-fellowship-activity-7258728565884526592-anr6?utm_source=share&utm_medium=member_android' target='_blank'>Dr. S Chand Rakesh Roshan, Ph.D. on LinkedIn: ETH Student Summer Research Fellowship</a></li>
+        <li><a href='https://www.linkedin.com/posts/lewis-anderson_job-details-activity-7257330213867372545-yYuy?utm_source=share&utm_medium=member_android' target='_blank'>Lewis Anderson on LinkedIn: Job Details</a></li>
     </ul>
-</body>
+
+</main>
+   <footer>        <p>Copyright &copy; 2023 Quantum Computing Journal Club</p>   </footer></body>
 </html>
